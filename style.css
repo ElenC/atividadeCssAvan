@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+}
+
+header{
+    background-color: rgb(157, 128, 168);
+    box-sizing: border-box;
+    padding: 30px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    position: relative;
+    color: #fff;
+}
+nav a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+}
+nav a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    left: 0;
+}
+nav a:hover::after{
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}
+nav a:hover::before{
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}
